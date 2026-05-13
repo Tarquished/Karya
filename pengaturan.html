@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Karya - Pengaturan Akun</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script>
+tailwind.config={theme:{extend:{fontFamily:{sans:['Plus Jakarta Sans','sans-serif']},colors:{cream:'#f8f7f3',paleyellow:'#ffffdb',lavender:'#94a4f6',royal:'#5a74f6',dark:'#1a1a2e'},boxShadow:{'card':'0 12px 32px -12px rgba(90,116,246,0.1)','card-hover':'0 20px 40px -10px rgba(90,116,246,0.2)','glow':'0 0 20px rgba(90,116,246,0.4)'}}}}
+</script>
+<style>
+/* --- FORCED FIGMA DIMENSIONS --- */
+html, body {
+    width: 1312px !important;
+    min-height: 2550px !important;
+    margin: 0 auto;
+    background: #f8f7f3;
+    overflow-x: hidden;
+}
+/* ------------------------------- */
+.glass{background:rgba(248,247,243,.85);backdrop-filter:blur(12px);border-bottom:1px solid rgba(0,0,0,.05)}
+</style>
+</head>
+<body class="text-gray-800 antialiased">
+
+<nav class="fixed top-0 w-full glass z-50">
+    <div class="max-w-[1312px] mx-auto px-6 h-20 flex items-center justify-between">
+        <div class="text-3xl font-extrabold text-royal tracking-tighter">Karya.id</div>
+        <div class="flex items-center space-x-4">
+            <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-royal to-lavender text-white flex items-center justify-center font-bold shadow-sm ring-2 ring-white border border-gray-100">A</div>
+        </div>
+    </div>
+</nav>
+
+<div class="max-w-[1312px] mx-auto px-6 pt-32 pb-20">
+    <h1 class="text-[32px] font-extrabold text-dark tracking-tight mb-8">Pengaturan Akun</h1>
+    
+    <div class="flex gap-8">
+        <div class="w-1/4">
+            <div class="bg-white rounded-[24px] border border-gray-100 p-4 shadow-sm flex flex-col gap-2">
+                <button class="text-left px-5 py-3 rounded-xl bg-royal text-white font-bold text-sm shadow-md shadow-royal/20">Profil Publik</button>
+                <button class="text-left px-5 py-3 rounded-xl text-gray-500 font-bold text-sm hover:bg-gray-50 transition-colors">Keamanan & Password</button>
+                <button class="text-left px-5 py-3 rounded-xl text-gray-500 font-bold text-sm hover:bg-gray-50 transition-colors">Notifikasi</button>
+                <button class="text-left px-5 py-3 rounded-xl text-gray-500 font-bold text-sm hover:bg-gray-50 transition-colors">Metode Pembayaran</button>
+            </div>
+        </div>
+
+        <div class="w-3/4 bg-white rounded-[32px] border border-gray-100 p-8 shadow-sm">
+            <div class="flex items-center gap-6 mb-10 pb-8 border-b border-gray-100">
+                <div class="w-24 h-24 rounded-full bg-gradient-to-tr from-royal to-lavender flex items-center justify-center text-white text-3xl font-extrabold shadow-md">A</div>
+                <div>
+                    <button class="px-5 py-2.5 bg-royal text-white rounded-xl font-bold text-sm shadow-md shadow-royal/20 mb-2">Ubah Foto Profil</button>
+                    <p class="text-xs text-gray-400">Format JPG, GIF atau PNG. Saiz maksimum 2MB.</p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-2 gap-6 mb-6">
+                <div>
+                    <label class="text-sm font-bold text-gray-600 block mb-2">Nama Depan</label>
+                    <input type="text" value="Anonim" class="w-full bg-gray-50 border border-gray-200 rounded-2xl py-3.5 px-4 text-sm font-medium focus:border-royal focus:ring-4 focus:ring-royal/10 transition-all outline-none">
+                </div>
+                <div>
+                    <label class="text-sm font-bold text-gray-600 block mb-2">Nama Belakang</label>
+                    <input type="text" value="User" class="w-full bg-gray-50 border border-gray-200 rounded-2xl py-3.5 px-4 text-sm font-medium focus:border-royal focus:ring-4 focus:ring-royal/10 transition-all outline-none">
+                </div>
+            </div>
+
+            <div class="mb-6">
+                <label class="text-sm font-bold text-gray-600 block mb-2">Email</label>
+                <input type="email" value="anonim@email.com" class="w-full bg-gray-50 border border-gray-200 rounded-2xl py-3.5 px-4 text-sm font-medium outline-none" readonly>
+                <p class="text-xs text-gray-400 mt-2">Sila hubungi sokongan teknikal untuk menukar alamat e-mel.</p>
+            </div>
+
+            <div class="mb-8">
+                <label class="text-sm font-bold text-gray-600 block mb-2">Bio / Tentang Saya</label>
+                <textarea rows="4" class="w-full bg-gray-50 border border-gray-200 rounded-2xl py-3.5 px-4 text-sm font-medium focus:border-royal focus:ring-4 focus:ring-royal/10 transition-all outline-none">Mahasiswa Ilmu Komputer & Freelance Developer yang fokus pada UI/UX dan pemrograman visual.</textarea>
+            </div>
+
+            <div class="flex justify-end gap-3">
+                <button class="px-6 py-3 bg-white text-gray-500 border border-gray-200 rounded-xl font-bold text-sm">Batal</button>
+                <button class="px-6 py-3 bg-royal text-white rounded-xl font-bold text-sm shadow-md shadow-royal/20">Simpan Perubahan</button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

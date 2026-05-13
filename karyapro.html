@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Karya - Upgrade ke Pro</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script>
+tailwind.config={theme:{extend:{fontFamily:{sans:['Plus Jakarta Sans','sans-serif']},colors:{cream:'#f8f7f3',royal:'#5a74f6',dark:'#1a1a2e'}}}}
+</script>
+<style>
+/* --- FORCED FIGMA DIMENSIONS & SAFE GRADIENT --- */
+html, body {
+    width: 1312px !important;
+    min-height: 2550px !important;
+    margin: 0 auto;
+    overflow-x: hidden;
+    /* CSS Murni untuk Gradien Royal-Indigo-Lavender agar aman di Figma */
+    background: linear-gradient(90deg, #5a74f6 0%, #6366f1 50%, #94a4f6 100%);
+}
+/* ----------------------------------------------- */
+</style>
+</head>
+<body class="text-gray-800 antialiased relative">
+    <div class="absolute -right-20 top-20 w-96 h-96 bg-white rounded-full blur-[140px] opacity-20"></div>
+    <div class="absolute -left-10 bottom-40 w-64 h-64 bg-amber-200 rounded-full blur-[100px] opacity-15"></div>
+
+    <div class="max-w-[1000px] mx-auto px-6 pt-28 pb-20 relative z-10">
+        <button class="flex items-center gap-2 text-sm font-semibold text-white/70 hover:text-white mb-8 transition-colors bg-white/10 backdrop-blur-sm px-5 py-2.5 rounded-full border border-white/20 w-fit">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg> Kembali
+        </button>
+        
+        <div class="mb-4">
+            <span class="inline-flex items-center gap-2 bg-white/15 backdrop-blur-sm text-white text-xs font-bold px-4 py-2 rounded-full border border-white/20">
+                Karya Pro
+            </span>
+        </div>
+        
+        <h1 class="text-5xl font-extrabold text-white mb-6 leading-tight max-w-2xl">Upgrade ke Karya Pro</h1>
+        <p class="text-xl text-white/80 leading-relaxed max-w-xl mb-10">Dapatkan badge Pro, prioritas di pencarian, akses analytics dashboard, dan fitur eksklusif lainnya. Tampil lebih menonjol dan raih klien berkualitas.</p>
+        
+        <button class="px-10 py-5 bg-white text-royal rounded-2xl font-black shadow-xl transition-all hover:-translate-y-1 mb-16 text-lg">
+            Coba Pro Gratis 7 Hari
+        </button>
+        
+        <div class="grid grid-cols-2 gap-6">
+            <div class="bg-white/10 backdrop-blur-md rounded-[32px] p-8 border border-white/20 hover:bg-white/15 transition-all">
+                <div class="text-4xl mb-5">⭐</div>
+                <h3 class="font-extrabold text-white text-xl mb-2">Badge Pro Eksklusif</h3>
+                <p class="text-white/70 leading-relaxed">Tampil beda dengan lencana verifikasi pro yang meningkatkan kepercayaan klien secara instan.</p>
+            </div>
+            <div class="bg-white/10 backdrop-blur-md rounded-[32px] p-8 border border-white/20 hover:bg-white/15 transition-all">
+                <div class="text-4xl mb-5">📈</div>
+                <h3 class="font-extrabold text-white text-xl mb-2">Prioritas Pencarian</h3>
+                <p class="text-white/70 leading-relaxed">Layanan Anda akan muncul di hasil pencarian teratas, memberikan eksposur 5x lebih banyak.</p>
+            </div>
+            <div class="bg-white/10 backdrop-blur-md rounded-[32px] p-8 border border-white/20 hover:bg-white/15 transition-all">
+                <div class="text-4xl mb-5">📊</div>
+                <h3 class="font-extrabold text-white text-xl mb-2">Analytics Dashboard</h3>
+                <p class="text-white/70 leading-relaxed">Pantau performa, jumlah klik, dan statistik akun Anda secara detail untuk strategi yang lebih baik.</p>
+            </div>
+            <div class="bg-white/10 backdrop-blur-md rounded-[32px] p-8 border border-white/20 hover:bg-white/15 transition-all">
+                <div class="text-4xl mb-5">🎯</div>
+                <h3 class="font-extrabold text-white text-xl mb-2">Leads Berkualitas</h3>
+                <p class="text-white/70 leading-relaxed">Dapatkan akses eksklusif ke proyek-proyek dengan budget tinggi yang hanya tersedia untuk member Pro.</p>
+            </div>
+        </div>
+
+        <div class="mt-12 text-center p-10 bg-black/20 backdrop-blur-sm rounded-[32px] border border-white/10">
+            <p class="text-white/60 font-bold uppercase tracking-widest text-xs mb-2">Hanya</p>
+            <div class="flex items-center justify-center gap-2">
+                <span class="text-white/50 text-xl font-bold">Rp</span>
+                <span class="text-5xl font-black text-white">49.000</span>
+                <span class="text-white/50 text-xl font-bold">/bulan</span>
+            </div>
+            <p class="text-white/40 text-sm mt-4 italic">*Batalkan kapan saja. Tanpa komitmen jangka panjang.</p>
+        </div>
+    </div>
+</body>
+</html>

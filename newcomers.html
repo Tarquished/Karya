@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Karya - Newcomer Spotlight</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script>
+tailwind.config={theme:{extend:{fontFamily:{sans:['Plus Jakarta Sans','sans-serif']},colors:{cream:'#f8f7f3',royal:'#5a74f6',dark:'#1a1a2e'},boxShadow:{'card-hover':'0 20px 40px -10px rgba(0,0,0,0.1)'}}}}
+</script>
+<style>
+/* --- FORCED FIGMA DIMENSIONS --- */
+html, body {
+    width: 1312px !important;
+    min-height: 2550px !important;
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+/* ------------------------------- */
+.bg-pattern { background-image: radial-gradient(circle at 1px 1px, rgba(255,255,255,0.1) 1px, transparent 0); background-size: 40px 40px; }
+</style>
+</head>
+<body class="text-gray-800 antialiased bg-gradient-to-br from-emerald-600 via-teal-500 to-cyan-400 relative">
+    <div class="absolute inset-0 bg-pattern opacity-30"></div>
+    
+    <div class="max-w-[1000px] mx-auto px-6 pt-28 pb-20 relative z-10">
+        <button class="flex items-center gap-2 text-sm font-semibold text-white/70 hover:text-white mb-8 transition-colors bg-white/10 backdrop-blur-sm px-5 py-2.5 rounded-full border border-white/20 w-fit">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg> Kembali
+        </button>
+        
+        <div class="mb-4">
+            <span class="inline-flex items-center gap-2 bg-white/15 backdrop-blur-sm text-white text-xs font-bold px-4 py-2 rounded-full border border-white/20">
+                <span class="w-2 h-2 bg-emerald-300 rounded-full animate-pulse"></span> Newcomer Spotlight
+            </span>
+        </div>
+        
+        <h1 class="text-5xl font-extrabold text-white mb-6 leading-tight max-w-2xl">Freelancer Baru Siap Berkarya!</h1>
+        <p class="text-xl text-white/80 leading-relaxed max-w-xl mb-10">Temukan talenta-talenta segar yang baru bergabung di Karya. Mereka membawa ide-ide kreatif, harga kompetitif, dan semangat tinggi untuk memberikan hasil terbaik.</p>
+        
+        <button class="px-8 py-4 bg-white text-emerald-700 rounded-2xl font-extrabold shadow-lg transition-all hover:-translate-y-1 mb-16">
+            Jelajahi Freelancer Baru →
+        </button>
+        
+        <div class="grid grid-cols-3 gap-6">
+            <div class="bg-white rounded-[32px] p-8 border border-gray-100 shadow-sm hover:shadow-card-hover hover:-translate-y-1 transition-all text-center">
+                <div class="w-20 h-20 mx-auto rounded-full bg-gradient-to-br from-pink-400 to-rose-400 flex items-center justify-center text-white text-2xl font-bold mb-4 shadow-md">F</div>
+                <h3 class="font-extrabold text-dark text-lg mb-1">Farah Nabila</h3>
+                <p class="text-sm text-gray-500 mb-6">Voice Over Talent</p>
+                <button class="w-full py-3 border border-gray-200 rounded-xl text-sm font-bold text-gray-600 hover:border-royal hover:text-royal transition-all">Lihat Profil</button>
+            </div>
+            <div class="bg-white rounded-[32px] p-8 border border-gray-100 shadow-sm hover:shadow-card-hover hover:-translate-y-1 transition-all text-center">
+                <div class="w-20 h-20 mx-auto rounded-full bg-gradient-to-br from-amber-400 to-orange-400 flex items-center justify-center text-white text-2xl font-bold mb-4 shadow-md">G</div>
+                <h3 class="font-extrabold text-dark text-lg mb-1">Gilang Ramadan</h3>
+                <p class="text-sm text-gray-500 mb-6">Digital Illustrator</p>
+                <button class="w-full py-3 border border-gray-200 rounded-xl text-sm font-bold text-gray-600 hover:border-royal hover:text-royal transition-all">Lihat Profil</button>
+            </div>
+            <div class="bg-white rounded-[32px] p-8 border border-gray-100 shadow-sm hover:shadow-card-hover hover:-translate-y-1 transition-all text-center">
+                <div class="w-20 h-20 mx-auto rounded-full bg-gradient-to-br from-sky-400 to-blue-400 flex items-center justify-center text-white text-2xl font-bold mb-4 shadow-md">I</div>
+                <h3 class="font-extrabold text-dark text-lg mb-1">Ivan Gunawan</h3>
+                <p class="text-sm text-gray-500 mb-6">Social Media Mgr</p>
+                <button class="w-full py-3 border border-gray-200 rounded-xl text-sm font-bold text-gray-600 hover:border-royal hover:text-royal transition-all">Lihat Profil</button>
+            </div>
+            <div class="bg-white rounded-[32px] p-8 border border-gray-100 shadow-sm hover:shadow-card-hover hover:-translate-y-1 transition-all text-center">
+                <div class="w-20 h-20 mx-auto rounded-full bg-gradient-to-br from-indigo-400 to-purple-400 flex items-center justify-center text-white text-2xl font-bold mb-4 shadow-md">A</div>
+                <h3 class="font-extrabold text-dark text-lg mb-1">Alee Yaseen</h3>
+                <p class="text-sm text-gray-500 mb-6">UI/UX Designer</p>
+                <button class="w-full py-3 border border-gray-200 rounded-xl text-sm font-bold text-gray-600 hover:border-royal hover:text-royal transition-all">Lihat Profil</button>
+            </div>
+            <div class="bg-white rounded-[32px] p-8 border border-gray-100 shadow-sm hover:shadow-card-hover hover:-translate-y-1 transition-all text-center">
+                <div class="w-20 h-20 mx-auto rounded-full bg-gradient-to-br from-red-400 to-pink-400 flex items-center justify-center text-white text-2xl font-bold mb-4 shadow-md">D</div>
+                <h3 class="font-extrabold text-dark text-lg mb-1">Dian Kesuma</h3>
+                <p class="text-sm text-gray-500 mb-6">Copywriter</p>
+                <button class="w-full py-3 border border-gray-200 rounded-xl text-sm font-bold text-gray-600 hover:border-royal hover:text-royal transition-all">Lihat Profil</button>
+            </div>
+            <div class="bg-white rounded-[32px] p-8 border border-gray-100 shadow-sm hover:shadow-card-hover hover:-translate-y-1 transition-all text-center">
+                <div class="w-20 h-20 mx-auto rounded-full bg-gradient-to-br from-blue-400 to-cyan-400 flex items-center justify-center text-white text-2xl font-bold mb-4 shadow-md">R</div>
+                <h3 class="font-extrabold text-dark text-lg mb-1">Ricky Ford</h3>
+                <p class="text-sm text-gray-500 mb-6">Developer</p>
+                <button class="w-full py-3 border border-gray-200 rounded-xl text-sm font-bold text-gray-600 hover:border-royal hover:text-royal transition-all">Lihat Profil</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

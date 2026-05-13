@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Karya - Keamanan Akun</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script>
+tailwind.config={theme:{extend:{fontFamily:{sans:['Plus Jakarta Sans','sans-serif']},colors:{cream:'#f8f7f3',royal:'#5a74f6',dark:'#1a1a2e'}}}}
+</script>
+<style>
+html, body { width: 1312px !important; min-height: 2550px !important; margin: 0 auto; background: #f8f7f3; overflow-x: hidden; }
+.glass{background:rgba(248,247,243,.85);backdrop-filter:blur(12px);border-bottom:1px solid rgba(0,0,0,.05)}
+</style>
+</head>
+<body class="text-gray-800 antialiased">
+
+<nav class="fixed top-0 w-full glass z-50">
+    <div class="max-w-[1312px] mx-auto px-6 h-20 flex items-center justify-between">
+        <div class="text-3xl font-extrabold text-royal tracking-tighter">Karya.id</div>
+        <div class="flex items-center space-x-4">
+            <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-royal to-lavender text-white flex items-center justify-center font-bold shadow-sm ring-2 ring-white border border-gray-100">A</div>
+        </div>
+    </div>
+</nav>
+
+<div class="max-w-[1312px] mx-auto px-6 pt-32 pb-20">
+    <h1 class="text-[32px] font-extrabold text-dark tracking-tight mb-8">Pengaturan Akun</h1>
+    
+    <div class="flex gap-8">
+        <div class="w-1/4">
+            <div class="bg-white rounded-[24px] border border-gray-100 p-4 shadow-sm flex flex-col gap-2">
+                <button class="text-left px-5 py-3 rounded-xl text-gray-500 font-bold text-sm hover:bg-gray-50 transition-colors">Profil Publik</button>
+                <button class="text-left px-5 py-3 rounded-xl bg-royal text-white font-bold text-sm shadow-md shadow-royal/20">Keamanan & Password</button>
+                <button class="text-left px-5 py-3 rounded-xl text-gray-500 font-bold text-sm hover:bg-gray-50 transition-colors">Notifikasi</button>
+                <button class="text-left px-5 py-3 rounded-xl text-gray-500 font-bold text-sm hover:bg-gray-50 transition-colors">Metode Pembayaran</button>
+            </div>
+        </div>
+
+        <div class="w-3/4 bg-white rounded-[32px] border border-gray-100 p-8 shadow-sm">
+            <h2 class="text-xl font-extrabold text-dark mb-6">Keamanan Akun</h2>
+            <div class="space-y-6">
+                <div class="flex items-center justify-between p-6 bg-gray-50 rounded-2xl border border-gray-100">
+                    <div>
+                        <p class="font-bold text-dark text-[15px]">Ubah Password</p>
+                        <p class="text-sm text-gray-500 mt-1">Terakhir diubah 3 bulan yang lalu</p>
+                    </div>
+                    <button class="px-5 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-bold text-dark hover:border-royal transition-all shadow-sm">Ubah Password</button>
+                </div>
+                
+                <div class="flex items-center justify-between p-6 bg-gray-50 rounded-2xl border border-gray-100">
+                    <div>
+                        <p class="font-bold text-dark text-[15px]">Verifikasi Dua Faktor (2FA)</p>
+                        <p class="text-sm text-gray-500 mt-1">Lindungi akun Anda dengan autentikasi tambahan</p>
+                    </div>
+                    <button class="px-5 py-2.5 bg-green-500 text-white rounded-xl text-sm font-bold shadow-sm flex items-center gap-2">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> Aktif
+                    </button>
+                </div>
+
+                <div class="flex items-center justify-between p-6 bg-gray-50 rounded-2xl border border-gray-100">
+                    <div>
+                        <p class="font-bold text-dark text-[15px]">Riwayat Login</p>
+                        <p class="text-sm text-gray-500 mt-1">Lihat perangkat dan lokasi yang pernah login ke akun Anda</p>
+                    </div>
+                    <button class="px-5 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-bold text-dark hover:border-royal transition-all shadow-sm">Lihat Riwayat</button>
+                </div>
+
+                <div class="flex items-center justify-between p-6 bg-red-50/50 rounded-2xl border border-red-100 mt-10">
+                    <div>
+                        <p class="font-bold text-red-600 text-[15px]">Hapus Akun</p>
+                        <p class="text-sm text-red-400 mt-1">Tindakan ini permanen dan tidak dapat dibatalkan</p>
+                    </div>
+                    <button class="px-5 py-2.5 bg-red-500 text-white rounded-xl text-sm font-bold shadow-sm hover:bg-red-600 transition-all">Hapus Akun</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

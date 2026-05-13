@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Karya - Semua Kategori</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script>
+tailwind.config={theme:{extend:{fontFamily:{sans:['Plus Jakarta Sans','sans-serif']},colors:{cream:'#f8f7f3',royal:'#5a74f6',dark:'#1a1a2e'},boxShadow:{'card':'0 12px 32px -12px rgba(90,116,246,0.1)','card-hover':'0 20px 40px -10px rgba(90,116,246,0.2)'}}}}
+</script>
+<style>
+/* --- FORCED FIGMA DIMENSIONS --- */
+html, body {
+    width: 1312px !important;
+    min-height: 2550px !important;
+    margin: 0 auto;
+    background: #f8f7f3; /* Menggunakan warna solid sesuai gambar */
+    overflow-x: hidden;
+}
+/* ------------------------------- */
+</style>
+</head>
+<body class="text-gray-800 antialiased">
+
+<div class="max-w-[1312px] mx-auto px-12 pt-20 pb-20">
+    <div class="flex items-start justify-between mb-12">
+        <div>
+            <h1 class="text-[40px] font-extrabold text-dark tracking-tight leading-tight">Semua Kategori</h1>
+            <p class="text-gray-500 text-lg mt-1">Eksplorasi layanan berdasarkan kategori keahlian.</p>
+        </div>
+        <button class="p-2 text-gray-500 hover:text-dark hover:bg-gray-200 rounded-full transition-all">
+            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+    </div>
+
+    <div class="grid grid-cols-4 gap-6">
+        
+        <div class="bg-white py-10 px-6 rounded-[32px] border border-gray-100/50 shadow-sm hover:shadow-card hover:-translate-y-1 transition-all cursor-pointer flex flex-col items-center text-center">
+            <div class="w-16 h-16 rounded-full bg-blue-50 text-blue-600 flex items-center justify-center text-3xl mb-5">💻</div>
+            <h3 class="font-extrabold text-dark text-[15px]">Programming & Tech</h3>
+        </div>
+
+        <div class="bg-white py-10 px-6 rounded-[32px] border border-gray-100/50 shadow-sm hover:shadow-card hover:-translate-y-1 transition-all cursor-pointer flex flex-col items-center text-center">
+            <div class="w-16 h-16 rounded-full bg-pink-50 text-pink-600 flex items-center justify-center text-3xl mb-5">🎨</div>
+            <h3 class="font-extrabold text-dark text-[15px]">Desain & Seni</h3>
+        </div>
+
+        <div class="bg-white py-10 px-6 rounded-[32px] border border-gray-100/50 shadow-sm hover:shadow-card hover:-translate-y-1 transition-all cursor-pointer flex flex-col items-center text-center">
+            <div class="w-16 h-16 rounded-full bg-yellow-50 text-yellow-600 flex items-center justify-center text-3xl mb-5">📝</div>
+            <h3 class="font-extrabold text-dark text-[15px]">Penulisan & Terjemahan</h3>
+        </div>
+
+        <div class="bg-white py-10 px-6 rounded-[32px] border border-gray-100/50 shadow-sm hover:shadow-card hover:-translate-y-1 transition-all cursor-pointer flex flex-col items-center text-center">
+            <div class="w-16 h-16 rounded-full bg-red-50 text-red-600 flex items-center justify-center text-3xl mb-5">🎥</div>
+            <h3 class="font-extrabold text-dark text-[15px]">Video & Animasi</h3>
+        </div>
+
+        <div class="bg-white py-10 px-6 rounded-[32px] border border-gray-100/50 shadow-sm hover:shadow-card hover:-translate-y-1 transition-all cursor-pointer flex flex-col items-center text-center">
+            <div class="w-16 h-16 rounded-full bg-green-50 text-green-600 flex items-center justify-center text-3xl mb-5">📈</div>
+            <h3 class="font-extrabold text-dark text-[15px]">Digital Marketing</h3>
+        </div>
+
+        <div class="bg-white py-10 px-6 rounded-[32px] border border-gray-100/50 shadow-sm hover:shadow-card hover:-translate-y-1 transition-all cursor-pointer flex flex-col items-center text-center">
+            <div class="w-16 h-16 rounded-full bg-purple-50 text-purple-600 flex items-center justify-center text-3xl mb-5">🎵</div>
+            <h3 class="font-extrabold text-dark text-[15px]">Musik & Audio</h3>
+        </div>
+
+        <div class="bg-white py-10 px-6 rounded-[32px] border border-gray-100/50 shadow-sm hover:shadow-card hover:-translate-y-1 transition-all cursor-pointer flex flex-col items-center text-center">
+            <div class="w-16 h-16 rounded-full bg-indigo-50 text-indigo-600 flex items-center justify-center text-3xl mb-5">💼</div>
+            <h3 class="font-extrabold text-dark text-[15px]">Bisnis & Keuangan</h3>
+        </div>
+
+        <div class="bg-white py-10 px-6 rounded-[32px] border border-gray-100/50 shadow-sm hover:shadow-card hover:-translate-y-1 transition-all cursor-pointer flex flex-col items-center text-center">
+            <div class="w-16 h-16 rounded-full bg-teal-50 text-teal-600 flex items-center justify-center text-3xl mb-5">📊</div>
+            <h3 class="font-extrabold text-dark text-[15px]">Data & Analitik</h3>
+        </div>
+
+        <div class="bg-white py-10 px-6 rounded-[32px] border border-gray-100/50 shadow-sm hover:shadow-card hover:-translate-y-1 transition-all cursor-pointer flex flex-col items-center text-center">
+            <div class="w-16 h-16 rounded-full bg-orange-50 text-orange-600 flex items-center justify-center text-3xl mb-5">☕</div>
+            <h3 class="font-extrabold text-dark text-[15px]">Gaya Hidup & Hobi</h3>
+        </div>
+
+        <div class="bg-white py-10 px-6 rounded-[32px] border border-gray-100/50 shadow-sm hover:shadow-card hover:-translate-y-1 transition-all cursor-pointer flex flex-col items-center text-center">
+            <div class="w-16 h-16 rounded-full bg-sky-50 text-sky-600 flex items-center justify-center text-3xl mb-5">📷</div>
+            <h3 class="font-extrabold text-dark text-[15px]">Fotografi</h3>
+        </div>
+
+        <div class="bg-white py-10 px-6 rounded-[32px] border border-gray-100/50 shadow-sm hover:shadow-card hover:-translate-y-1 transition-all cursor-pointer flex flex-col items-center text-center">
+            <div class="w-16 h-16 rounded-full bg-violet-50 text-violet-600 flex items-center justify-center text-3xl mb-5">🤖</div>
+            <h3 class="font-extrabold text-dark text-[15px]">AI Services</h3>
+        </div>
+
+        <div class="bg-white py-10 px-6 rounded-[32px] border border-gray-100/50 shadow-sm hover:shadow-card hover:-translate-y-1 transition-all cursor-pointer flex flex-col items-center text-center">
+            <div class="w-16 h-16 rounded-full bg-gray-100 text-gray-600 flex items-center justify-center text-3xl mb-5">✨</div>
+            <h3 class="font-extrabold text-dark text-[15px]">Layanan Lainnya</h3>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
