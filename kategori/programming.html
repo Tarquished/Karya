@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Karya - Programming & Tech</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script>
+tailwind.config={theme:{extend:{fontFamily:{sans:['Plus Jakarta Sans','sans-serif']},colors:{cream:'#f8f7f3',royal:'#5a74f6',dark:'#1a1a2e'},boxShadow:{'card-hover':'0 20px 40px -10px rgba(90,116,246,0.1)'}}}}
+</script>
+<style>
+/* --- FORCED FIGMA DIMENSIONS --- */
+html, body {
+    width: 1312px !important;
+    min-height: 2550px !important;
+    margin: 0 auto;
+    background: #f8f7f3;
+    overflow-x: hidden;
+}
+/* ------------------------------- */
+.bg-mesh{background: radial-gradient(at 80% 0%,hsla(230,89%,84%,.4) 0,transparent 50%),radial-gradient(at 0% 50%,hsla(60,100%,86%,.4) 0,transparent 50%)}
+</style>
+</head>
+<body class="text-gray-800 antialiased bg-mesh">
+
+<div class="max-w-[1300px] mx-auto px-6 pt-20 pb-20">
+    <div class="flex flex-col md:flex-row items-start md:items-center justify-between mb-10 gap-4">
+      <div>
+        <button class="flex items-center gap-2 text-sm font-semibold text-gray-500 hover:text-royal mb-4 transition-colors bg-white px-4 py-2 rounded-full border border-gray-200 shadow-sm w-fit">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/></svg> Kembali ke Beranda
+        </button>
+        <div class="flex items-center gap-4">
+            <div class="w-14 h-14 rounded-2xl bg-blue-50 text-blue-600 flex items-center justify-center text-3xl shadow-sm">💻</div>
+            <div>
+                <h1 class="text-4xl font-extrabold text-dark tracking-tight">Programming & Tech</h1>
+                <p class="text-gray-500 mt-1 font-medium">Layanan teknis profesional untuk solusi digital Anda.</p>
+            </div>
+        </div>
+      </div>
+      <div class="flex items-center gap-3">
+        <select class="bg-white border border-gray-200 rounded-xl px-4 py-2.5 text-sm font-semibold text-gray-600 outline-none shadow-sm">
+          <option>Urutkan: Paling Relevan</option>
+          <option>Harga Terendah</option>
+          <option>Rating Tertinggi</option>
+        </select>
+      </div>
+    </div>
+    
+    <div class="flex items-center gap-2 mb-10 overflow-x-auto pb-2">
+      <button class="px-5 py-2.5 bg-royal text-white rounded-full text-sm font-bold shadow-md shadow-royal/20 whitespace-nowrap">Semua</button>
+      <button class="px-5 py-2.5 bg-white text-gray-600 border border-gray-200 rounded-full text-sm font-bold hover:border-royal transition-all whitespace-nowrap">Web Development</button>
+      <button class="px-5 py-2.5 bg-white text-gray-600 border border-gray-200 rounded-full text-sm font-bold hover:border-royal transition-all whitespace-nowrap">Mobile Apps</button>
+      <button class="px-5 py-2.5 bg-white text-gray-600 border border-gray-200 rounded-full text-sm font-bold hover:border-royal transition-all whitespace-nowrap">Scripting & Bot</button>
+      <button class="px-5 py-2.5 bg-white text-gray-600 border border-gray-200 rounded-full text-sm font-bold hover:border-royal transition-all whitespace-nowrap">Game Dev</button>
+    </div>
+
+    <div class="grid grid-cols-4 gap-6">
+        
+        <div class="bg-white rounded-[24px] p-4 shadow-sm border border-gray-100 flex flex-col">
+            <div class="w-full h-48 rounded-2xl mb-3 relative overflow-hidden bg-emerald-500">
+                <svg preserveAspectRatio="xMidYMid slice" viewBox="0 0 400 210" class="w-full h-full"><defs><linearGradient id="g_p1" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#10b981"/><stop offset="100%" stop-color="#059669"/></linearGradient></defs><rect width="400" height="210" fill="url(#g_p1)"/><rect x="70" y="30" width="260" height="150" rx="12" fill="#0f172a" opacity=".9"/><circle cx="87" cy="42" r="4" fill="#ef4444"/><circle cx="100" cy="42" r="4" fill="#eab308"/><circle cx="113" cy="42" r="4" fill="#22c55e"/></svg>
+                <div class="absolute top-3 left-3 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-lg text-xs font-bold text-dark shadow-sm">Trending</div>
+            </div>
+            <div class="flex items-center justify-between mb-3">
+                <div class="flex items-center gap-2"><div class="w-7 h-7 rounded-full bg-purple-100 flex items-center justify-center font-bold text-purple-600 text-xs">R</div><span class="font-bold text-sm text-gray-700">Ricky Ford</span></div>
+                <span class="text-yellow-500 text-sm font-bold">★ 5.0</span>
+            </div>
+            <h3 class="font-bold text-dark text-[15px] leading-tight mb-3 flex-grow">Pembuatan Game Script & Automation Bot (Lua/Python)</h3>
+            <div class="pt-3 border-t border-gray-100 flex justify-between items-center mt-auto">
+                <span class="text-xs text-gray-500 font-medium uppercase tracking-wider">Mulai Dari</span>
+                <span class="text-lg font-extrabold text-royal">Rp 500.000</span>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-[24px] p-4 shadow-sm border border-gray-100 flex flex-col">
+            <div class="w-full h-48 rounded-2xl mb-3 relative overflow-hidden bg-blue-500">
+                <svg preserveAspectRatio="xMidYMid slice" viewBox="0 0 400 210" class="w-full h-full"><defs><linearGradient id="g_p2" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#5865F2"/><stop offset="100%" stop-color="#7289da"/></linearGradient></defs><rect width="400" height="210" fill="url(#g_p2)"/><rect x="120" y="40" width="160" height="130" rx="16" fill="white" opacity=".9"/></svg>
+            </div>
+            <div class="flex items-center justify-between mb-3">
+                <div class="flex items-center gap-2"><div class="w-7 h-7 rounded-full bg-paleyellow flex items-center justify-center font-bold text-royal text-xs border border-yellow-200">A</div><span class="font-bold text-sm text-gray-700">Alee Yaseen</span></div>
+                <span class="text-yellow-500 text-sm font-bold">★ 4.9</span>
+            </div>
+            <h3 class="font-bold text-dark text-[15px] leading-tight mb-3 flex-grow">Setup Server Discord Komunitas & Bot Custom</h3>
+            <div class="pt-3 border-t border-gray-100 flex justify-between items-center mt-auto">
+                <span class="text-xs text-gray-500 font-medium uppercase tracking-wider">Mulai Dari</span>
+                <span class="text-lg font-extrabold text-royal">Rp 150.000</span>
+            </div>
+        </div>
+
+        </div>
+</div>
+
+</body>
+</html>
