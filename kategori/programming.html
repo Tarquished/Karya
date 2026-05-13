@@ -11,14 +11,7 @@ tailwind.config={theme:{extend:{fontFamily:{sans:['Plus Jakarta Sans','sans-seri
 </script>
 <style>
 /* --- FORCED FIGMA DIMENSIONS --- */
-html, body {
-    width: 1312px !important;
-    min-height: 2550px !important;
-    margin: 0 auto;
-    background: #f8f7f3;
-    overflow-x: hidden;
-}
-/* ------------------------------- */
+html, body { width: 1312px !important; min-height: 2550px !important; margin: 0 auto; background: #f8f7f3; overflow-x: hidden; }
 .bg-mesh{background: radial-gradient(at 80% 0%,hsla(230,89%,84%,.4) 0,transparent 50%),radial-gradient(at 0% 50%,hsla(60,100%,86%,.4) 0,transparent 50%)}
 </style>
 </head>
@@ -28,7 +21,7 @@ html, body {
     <div class="flex flex-col md:flex-row items-start md:items-center justify-between mb-10 gap-4">
       <div>
         <button class="flex items-center gap-2 text-sm font-semibold text-gray-500 hover:text-royal mb-4 transition-colors bg-white px-4 py-2 rounded-full border border-gray-200 shadow-sm w-fit">
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/></svg> Kembali ke Beranda
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/></svg> Kembali ke Kategori
         </button>
         <div class="flex items-center gap-4">
             <div class="w-14 h-14 rounded-2xl bg-blue-50 text-blue-600 flex items-center justify-center text-3xl shadow-sm">💻</div>
@@ -38,58 +31,93 @@ html, body {
             </div>
         </div>
       </div>
-      <div class="flex items-center gap-3">
-        <select class="bg-white border border-gray-200 rounded-xl px-4 py-2.5 text-sm font-semibold text-gray-600 outline-none shadow-sm">
-          <option>Urutkan: Paling Relevan</option>
-          <option>Harga Terendah</option>
-          <option>Rating Tertinggi</option>
-        </select>
-      </div>
+      <select class="bg-white border border-gray-200 rounded-xl px-4 py-2.5 text-sm font-semibold text-gray-600 outline-none shadow-sm"><option>Urutkan: Paling Relevan</option><option>Terbaru</option></select>
     </div>
     
     <div class="flex items-center gap-2 mb-10 overflow-x-auto pb-2">
-      <button class="px-5 py-2.5 bg-royal text-white rounded-full text-sm font-bold shadow-md shadow-royal/20 whitespace-nowrap">Semua</button>
-      <button class="px-5 py-2.5 bg-white text-gray-600 border border-gray-200 rounded-full text-sm font-bold hover:border-royal transition-all whitespace-nowrap">Web Development</button>
-      <button class="px-5 py-2.5 bg-white text-gray-600 border border-gray-200 rounded-full text-sm font-bold hover:border-royal transition-all whitespace-nowrap">Mobile Apps</button>
-      <button class="px-5 py-2.5 bg-white text-gray-600 border border-gray-200 rounded-full text-sm font-bold hover:border-royal transition-all whitespace-nowrap">Scripting & Bot</button>
-      <button class="px-5 py-2.5 bg-white text-gray-600 border border-gray-200 rounded-full text-sm font-bold hover:border-royal transition-all whitespace-nowrap">Game Dev</button>
+      <button class="px-5 py-2.5 bg-royal text-white rounded-full text-sm font-bold shadow-md shadow-royal/20">Semua</button>
+      <button class="px-5 py-2.5 bg-white text-gray-600 border border-gray-200 rounded-full text-sm font-bold">Web Development</button>
+      <button class="px-5 py-2.5 bg-white text-gray-600 border border-gray-200 rounded-full text-sm font-bold">Mobile Apps</button>
+      <button class="px-5 py-2.5 bg-white text-gray-600 border border-gray-200 rounded-full text-sm font-bold">Scripting & Bot</button>
     </div>
 
     <div class="grid grid-cols-4 gap-6">
-        
         <div class="bg-white rounded-[24px] p-4 shadow-sm border border-gray-100 flex flex-col">
-            <div class="w-full h-48 rounded-2xl mb-3 relative overflow-hidden bg-emerald-500">
-                <svg preserveAspectRatio="xMidYMid slice" viewBox="0 0 400 210" class="w-full h-full"><defs><linearGradient id="g_p1" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#10b981"/><stop offset="100%" stop-color="#059669"/></linearGradient></defs><rect width="400" height="210" fill="url(#g_p1)"/><rect x="70" y="30" width="260" height="150" rx="12" fill="#0f172a" opacity=".9"/><circle cx="87" cy="42" r="4" fill="#ef4444"/><circle cx="100" cy="42" r="4" fill="#eab308"/><circle cx="113" cy="42" r="4" fill="#22c55e"/></svg>
-                <div class="absolute top-3 left-3 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-lg text-xs font-bold text-dark shadow-sm">Trending</div>
-            </div>
-            <div class="flex items-center justify-between mb-3">
-                <div class="flex items-center gap-2"><div class="w-7 h-7 rounded-full bg-purple-100 flex items-center justify-center font-bold text-purple-600 text-xs">R</div><span class="font-bold text-sm text-gray-700">Ricky Ford</span></div>
-                <span class="text-yellow-500 text-sm font-bold">★ 5.0</span>
-            </div>
+            <div class="w-full h-48 rounded-2xl mb-3 relative overflow-hidden"><svg preserveAspectRatio="xMidYMid slice" viewBox="0 0 400 210" class="w-full h-full"><defs><linearGradient id="p1" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#10b981"/><stop offset="100%" stop-color="#059669"/></linearGradient></defs><rect width="400" height="210" fill="url(#p1)"/><rect x="70" y="30" width="260" height="150" rx="12" fill="#0f172a" opacity=".9"/><circle cx="87" cy="42" r="4" fill="#ef4444"/><circle cx="100" cy="42" r="4" fill="#eab308"/><circle cx="113" cy="42" r="4" fill="#22c55e"/><rect x="85" y="64" width="60" height="5" rx="2.5" fill="#4ade80"/><rect x="85" y="76" width="100" height="5" rx="2.5" fill="#86efac"/></svg>
+            <div class="absolute top-3 left-3 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-lg text-xs font-bold text-dark shadow-sm">Trending</div></div>
+            <div class="flex items-center justify-between mb-3"><div class="flex items-center gap-2"><div class="w-7 h-7 rounded-full bg-purple-100 flex items-center justify-center font-bold text-purple-600 text-xs">R</div><span class="font-bold text-sm text-gray-700">Ricky Ford</span></div><span class="text-yellow-500 text-sm font-bold">★ 5.0</span></div>
             <h3 class="font-bold text-dark text-[15px] leading-tight mb-3 flex-grow">Pembuatan Game Script & Automation Bot (Lua/Python)</h3>
-            <div class="pt-3 border-t border-gray-100 flex justify-between items-center mt-auto">
-                <span class="text-xs text-gray-500 font-medium uppercase tracking-wider">Mulai Dari</span>
-                <span class="text-lg font-extrabold text-royal">Rp 500.000</span>
-            </div>
+            <div class="pt-3 border-t border-gray-100 flex justify-between items-center mt-auto"><span class="text-xs text-gray-500 font-medium uppercase tracking-wider">Mulai Dari</span><span class="text-lg font-extrabold text-royal">Rp 500.000</span></div>
         </div>
-
         <div class="bg-white rounded-[24px] p-4 shadow-sm border border-gray-100 flex flex-col">
-            <div class="w-full h-48 rounded-2xl mb-3 relative overflow-hidden bg-blue-500">
-                <svg preserveAspectRatio="xMidYMid slice" viewBox="0 0 400 210" class="w-full h-full"><defs><linearGradient id="g_p2" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#5865F2"/><stop offset="100%" stop-color="#7289da"/></linearGradient></defs><rect width="400" height="210" fill="url(#g_p2)"/><rect x="120" y="40" width="160" height="130" rx="16" fill="white" opacity=".9"/></svg>
-            </div>
-            <div class="flex items-center justify-between mb-3">
-                <div class="flex items-center gap-2"><div class="w-7 h-7 rounded-full bg-paleyellow flex items-center justify-center font-bold text-royal text-xs border border-yellow-200">A</div><span class="font-bold text-sm text-gray-700">Alee Yaseen</span></div>
-                <span class="text-yellow-500 text-sm font-bold">★ 4.9</span>
-            </div>
+            <div class="w-full h-48 rounded-2xl mb-3 relative overflow-hidden"><svg preserveAspectRatio="xMidYMid slice" viewBox="0 0 400 210" class="w-full h-full"><defs><linearGradient id="p2" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#0ea5e9"/><stop offset="100%" stop-color="#2563eb"/></linearGradient></defs><rect width="400" height="210" fill="url(#p2)"/><rect x="50" y="20" width="300" height="170" rx="12" fill="white" opacity=".93"/><rect x="65" y="52" width="120" height="10" rx="4" fill="#1e3a5f" opacity=".6"/><rect x="240" y="52" width="95" height="65" rx="8" fill="#dbeafe"/></svg>
+            <div class="absolute top-3 left-3 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-lg text-xs font-bold text-dark shadow-sm">Hot</div></div>
+            <div class="flex items-center justify-between mb-3"><div class="flex items-center gap-2"><div class="w-7 h-7 rounded-full bg-blue-100 flex items-center justify-center font-bold text-blue-600 text-xs">H</div><span class="font-bold text-sm text-gray-700">Hana Sari</span></div><span class="text-yellow-500 text-sm font-bold">★ 4.9</span></div>
+            <h3 class="font-bold text-dark text-[15px] leading-tight mb-3 flex-grow">Pembuatan Landing Page Bisnis (React/Tailwind)</h3>
+            <div class="pt-3 border-t border-gray-100 flex justify-between items-center mt-auto"><span class="text-xs text-gray-500 font-medium uppercase tracking-wider">Mulai Dari</span><span class="text-lg font-extrabold text-royal">Rp 850.000</span></div>
+        </div>
+        <div class="bg-white rounded-[24px] p-4 shadow-sm border border-gray-100 flex flex-col">
+            <div class="w-full h-48 rounded-2xl mb-3 relative overflow-hidden"><svg preserveAspectRatio="xMidYMid slice" viewBox="0 0 400 210" class="w-full h-full"><defs><linearGradient id="p3" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#5865F2"/><stop offset="100%" stop-color="#7289da"/></linearGradient></defs><rect width="400" height="210" fill="url(#p3)"/><rect x="120" y="40" width="160" height="130" rx="16" fill="white" opacity=".9"/></svg></div>
+            <div class="flex items-center justify-between mb-3"><div class="flex items-center gap-2"><div class="w-7 h-7 rounded-full bg-paleyellow flex items-center justify-center font-bold text-royal text-xs border border-yellow-200">A</div><span class="font-bold text-sm text-gray-700">Alee Yaseen</span></div><span class="text-yellow-500 text-sm font-bold">★ 5.0</span></div>
             <h3 class="font-bold text-dark text-[15px] leading-tight mb-3 flex-grow">Setup Server Discord Komunitas & Bot Custom</h3>
-            <div class="pt-3 border-t border-gray-100 flex justify-between items-center mt-auto">
-                <span class="text-xs text-gray-500 font-medium uppercase tracking-wider">Mulai Dari</span>
-                <span class="text-lg font-extrabold text-royal">Rp 150.000</span>
-            </div>
+            <div class="pt-3 border-t border-gray-100 flex justify-between items-center mt-auto"><span class="text-xs text-gray-500 font-medium uppercase tracking-wider">Mulai Dari</span><span class="text-lg font-extrabold text-royal">Rp 150.000</span></div>
         </div>
-
+        <div class="bg-white rounded-[24px] p-4 shadow-sm border border-gray-100 flex flex-col">
+            <div class="w-full h-48 rounded-2xl mb-3 relative overflow-hidden"><svg preserveAspectRatio="xMidYMid slice" viewBox="0 0 400 210" class="w-full h-full"><defs><linearGradient id="p4" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#f59e0b"/><stop offset="100%" stop-color="#ea580c"/></linearGradient></defs><rect width="400" height="210" fill="url(#p4)"/><rect x="70" y="30" width="260" height="150" rx="12" fill="#0f172a" opacity=".9"/><rect x="85" y="64" width="100" height="5" rx="2.5" fill="#fcd34d"/></svg>
+            <div class="absolute top-3 left-3 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-lg text-xs font-bold text-red-500 shadow-sm">Promo</div></div>
+            <div class="flex items-center justify-between mb-3"><div class="flex items-center gap-2"><div class="w-7 h-7 rounded-full bg-teal-100 flex items-center justify-center font-bold text-teal-600 text-xs">B</div><span class="font-bold text-sm text-gray-700">Budi Santoso</span></div><span class="text-yellow-500 text-sm font-bold">★ 4.8</span></div>
+            <h3 class="font-bold text-dark text-[15px] leading-tight mb-3 flex-grow">Bug Fixing & Optimasi Kode (JavaScript/PHP)</h3>
+            <div class="pt-3 border-t border-gray-100 flex justify-between items-center mt-auto"><span class="text-xs text-gray-500 font-medium uppercase tracking-wider">Mulai Dari</span><span class="text-lg font-extrabold text-royal">Rp 200.000</span></div>
         </div>
+        <div class="bg-white rounded-[24px] p-4 shadow-sm border border-gray-100 flex flex-col">
+            <div class="w-full h-48 rounded-2xl mb-3 relative overflow-hidden"><svg preserveAspectRatio="xMidYMid slice" viewBox="0 0 400 210" class="w-full h-full"><defs><linearGradient id="p5" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#8b5cf6"/><stop offset="100%" stop-color="#6366f1"/></linearGradient></defs><rect width="400" height="210" fill="url(#p5)"/><rect x="150" y="20" width="100" height="170" rx="16" fill="white" opacity=".9"/><rect x="180" y="30" width="40" height="4" rx="2" fill="#c4b5fd"/></svg></div>
+            <div class="flex items-center justify-between mb-3"><div class="flex items-center gap-2"><div class="w-7 h-7 rounded-full bg-indigo-100 flex items-center justify-center font-bold text-indigo-600 text-xs">N</div><span class="font-bold text-sm text-gray-700">Nadia Putri</span></div><span class="text-yellow-500 text-sm font-bold">★ 5.0</span></div>
+            <h3 class="font-bold text-dark text-[15px] leading-tight mb-3 flex-grow">Pembuatan Aplikasi Mobile (Flutter/React Native)</h3>
+            <div class="pt-3 border-t border-gray-100 flex justify-between items-center mt-auto"><span class="text-xs text-gray-500 font-medium uppercase tracking-wider">Mulai Dari</span><span class="text-lg font-extrabold text-royal">Rp 2.500.000</span></div>
+        </div>
+        <div class="bg-white rounded-[24px] p-4 shadow-sm border border-gray-100 flex flex-col">
+            <div class="w-full h-48 rounded-2xl mb-3 relative overflow-hidden"><svg preserveAspectRatio="xMidYMid slice" viewBox="0 0 400 210" class="w-full h-full"><defs><linearGradient id="p6" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#14b8a6"/><stop offset="100%" stop-color="#0d9488"/></linearGradient></defs><rect width="400" height="210" fill="url(#p6)"/><rect x="70" y="30" width="260" height="150" rx="12" fill="#0f172a" opacity=".9"/><rect x="85" y="64" width="120" height="5" rx="2.5" fill="#5eead4"/></svg></div>
+            <div class="flex items-center justify-between mb-3"><div class="flex items-center gap-2"><div class="w-7 h-7 rounded-full bg-red-100 flex items-center justify-center font-bold text-red-600 text-xs">D</div><span class="font-bold text-sm text-gray-700">Dian Kesuma</span></div><span class="text-yellow-500 text-sm font-bold">★ 4.9</span></div>
+            <h3 class="font-bold text-dark text-[15px] leading-tight mb-3 flex-grow">Web Scraping & Data Extraction Script</h3>
+            <div class="pt-3 border-t border-gray-100 flex justify-between items-center mt-auto"><span class="text-xs text-gray-500 font-medium uppercase tracking-wider">Mulai Dari</span><span class="text-lg font-extrabold text-royal">Rp 300.000</span></div>
+        </div>
+        <div class="bg-white rounded-[24px] p-4 shadow-sm border border-gray-100 flex flex-col">
+            <div class="w-full h-48 rounded-2xl mb-3 relative overflow-hidden"><svg preserveAspectRatio="xMidYMid slice" viewBox="0 0 400 210" class="w-full h-full"><defs><linearGradient id="p7" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#3b82f6"/><stop offset="100%" stop-color="#2563eb"/></linearGradient></defs><rect width="400" height="210" fill="url(#p7)"/><rect x="50" y="20" width="300" height="170" rx="12" fill="white" opacity=".93"/><rect x="240" y="52" width="95" height="65" rx="8" fill="#dbeafe"/></svg></div>
+            <div class="flex items-center justify-between mb-3"><div class="flex items-center gap-2"><div class="w-7 h-7 rounded-full bg-amber-100 flex items-center justify-center font-bold text-amber-600 text-xs">G</div><span class="font-bold text-sm text-gray-700">Gilang R.</span></div><span class="text-yellow-500 text-sm font-bold">★ 4.8</span></div>
+            <h3 class="font-bold text-dark text-[15px] leading-tight mb-3 flex-grow">Fullstack Web Development (MERN Stack)</h3>
+            <div class="pt-3 border-t border-gray-100 flex justify-between items-center mt-auto"><span class="text-xs text-gray-500 font-medium uppercase tracking-wider">Mulai Dari</span><span class="text-lg font-extrabold text-royal">Rp 3.000.000</span></div>
+        </div>
+        <div class="bg-white rounded-[24px] p-4 shadow-sm border border-gray-100 flex flex-col">
+            <div class="w-full h-48 rounded-2xl mb-3 relative overflow-hidden"><svg preserveAspectRatio="xMidYMid slice" viewBox="0 0 400 210" class="w-full h-full"><defs><linearGradient id="p8" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#8b5cf6"/><stop offset="100%" stop-color="#a855f7"/></linearGradient></defs><rect width="400" height="210" fill="url(#p8)"/><rect x="70" y="30" width="260" height="150" rx="12" fill="#0f172a" opacity=".9"/><rect x="85" y="64" width="80" height="5" rx="2.5" fill="#e9d5ff"/></svg></div>
+            <div class="flex items-center justify-between mb-3"><div class="flex items-center gap-2"><div class="w-7 h-7 rounded-full bg-pink-100 flex items-center justify-center font-bold text-pink-600 text-xs">C</div><span class="font-bold text-sm text-gray-700">Clara Monica</span></div><span class="text-yellow-500 text-sm font-bold">★ 4.9</span></div>
+            <h3 class="font-bold text-dark text-[15px] leading-tight mb-3 flex-grow">Smart Contract & Web3 DApp Development</h3>
+            <div class="pt-3 border-t border-gray-100 flex justify-between items-center mt-auto"><span class="text-xs text-gray-500 font-medium uppercase tracking-wider">Mulai Dari</span><span class="text-lg font-extrabold text-royal">Rp 1.500.000</span></div>
+        </div>
+        <div class="bg-white rounded-[24px] p-4 shadow-sm border border-gray-100 flex flex-col">
+            <div class="w-full h-48 rounded-2xl mb-3 relative overflow-hidden"><svg preserveAspectRatio="xMidYMid slice" viewBox="0 0 400 210" class="w-full h-full"><defs><linearGradient id="p9" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#0284c7"/><stop offset="100%" stop-color="#0369a1"/></linearGradient></defs><rect width="400" height="210" fill="url(#p9)"/><rect x="70" y="30" width="260" height="150" rx="12" fill="#0f172a" opacity=".9"/><rect x="85" y="64" width="140" height="5" rx="2.5" fill="#bae6fd"/></svg></div>
+            <div class="flex items-center justify-between mb-3"><div class="flex items-center gap-2"><div class="w-7 h-7 rounded-full bg-purple-100 flex items-center justify-center font-bold text-purple-600 text-xs">R</div><span class="font-bold text-sm text-gray-700">Ricky Ford</span></div><span class="text-yellow-500 text-sm font-bold">★ 5.0</span></div>
+            <h3 class="font-bold text-dark text-[15px] leading-tight mb-3 flex-grow">Integrasi Payment Gateway (Midtrans/Xendit)</h3>
+            <div class="pt-3 border-t border-gray-100 flex justify-between items-center mt-auto"><span class="text-xs text-gray-500 font-medium uppercase tracking-wider">Mulai Dari</span><span class="text-lg font-extrabold text-royal">Rp 400.000</span></div>
+        </div>
+        <div class="bg-white rounded-[24px] p-4 shadow-sm border border-gray-100 flex flex-col">
+            <div class="w-full h-48 rounded-2xl mb-3 relative overflow-hidden"><svg preserveAspectRatio="xMidYMid slice" viewBox="0 0 400 210" class="w-full h-full"><defs><linearGradient id="p10" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#1e40af"/><stop offset="100%" stop-color="#1e3a8a"/></linearGradient></defs><rect width="400" height="210" fill="url(#p10)"/><rect x="50" y="20" width="300" height="170" rx="12" fill="white" opacity=".93"/><rect x="240" y="52" width="95" height="65" rx="8" fill="#dbeafe"/></svg></div>
+            <div class="flex items-center justify-between mb-3"><div class="flex items-center gap-2"><div class="w-7 h-7 rounded-full bg-blue-100 flex items-center justify-center font-bold text-blue-600 text-xs">S</div><span class="font-bold text-sm text-gray-700">Sadim M.</span></div><span class="text-yellow-500 text-sm font-bold">★ 4.9</span></div>
+            <h3 class="font-bold text-dark text-[15px] leading-tight mb-3 flex-grow">Custom WordPress Plugin & Theme Development</h3>
+            <div class="pt-3 border-t border-gray-100 flex justify-between items-center mt-auto"><span class="text-xs text-gray-500 font-medium uppercase tracking-wider">Mulai Dari</span><span class="text-lg font-extrabold text-royal">Rp 600.000</span></div>
+        </div>
+        <div class="bg-white rounded-[24px] p-4 shadow-sm border border-gray-100 flex flex-col">
+            <div class="w-full h-48 rounded-2xl mb-3 relative overflow-hidden"><svg preserveAspectRatio="xMidYMid slice" viewBox="0 0 400 210" class="w-full h-full"><defs><linearGradient id="p11" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#4f46e5"/><stop offset="100%" stop-color="#4338ca"/></linearGradient></defs><rect width="400" height="210" fill="url(#p11)"/><rect x="70" y="30" width="260" height="150" rx="12" fill="#0f172a" opacity=".9"/><rect x="85" y="64" width="70" height="5" rx="2.5" fill="#a5b4fc"/></svg></div>
+            <div class="flex items-center justify-between mb-3"><div class="flex items-center gap-2"><div class="w-7 h-7 rounded-full bg-rose-100 flex items-center justify-center font-bold text-rose-600 text-xs">M</div><span class="font-bold text-sm text-gray-700">Mila Azzahra</span></div><span class="text-yellow-500 text-sm font-bold">★ 4.9</span></div>
+            <h3 class="font-bold text-dark text-[15px] leading-tight mb-3 flex-grow">REST API Development (Node.js/Express)</h3>
+            <div class="pt-3 border-t border-gray-100 flex justify-between items-center mt-auto"><span class="text-xs text-gray-500 font-medium uppercase tracking-wider">Mulai Dari</span><span class="text-lg font-extrabold text-royal">Rp 750.000</span></div>
+        </div>
+        <div class="bg-white rounded-[24px] p-4 shadow-sm border border-gray-100 flex flex-col">
+            <div class="w-full h-48 rounded-2xl mb-3 relative overflow-hidden"><svg preserveAspectRatio="xMidYMid slice" viewBox="0 0 400 210" class="w-full h-full"><defs><linearGradient id="p12" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#0f766e"/><stop offset="100%" stop-color="#115e59"/></linearGradient></defs><rect width="400" height="210" fill="url(#p12)"/><rect x="70" y="30" width="260" height="150" rx="12" fill="#0f172a" opacity=".9"/><rect x="85" y="64" width="110" height="5" rx="2.5" fill="#99f6e4"/></svg></div>
+            <div class="flex items-center justify-between mb-3"><div class="flex items-center gap-2"><div class="w-7 h-7 rounded-full bg-paleyellow flex items-center justify-center font-bold text-royal text-xs border border-yellow-200">A</div><span class="font-bold text-sm text-gray-700">Alee Yaseen</span></div><span class="text-yellow-500 text-sm font-bold">★ 5.0</span></div>
+            <h3 class="font-bold text-dark text-[15px] leading-tight mb-3 flex-grow">Setup Cloud Server & VPS (AWS/DigitalOcean)</h3>
+            <div class="pt-3 border-t border-gray-100 flex justify-between items-center mt-auto"><span class="text-xs text-gray-500 font-medium uppercase tracking-wider">Mulai Dari</span><span class="text-lg font-extrabold text-royal">Rp 250.000</span></div>
+        </div>
+    </div>
 </div>
-
 </body>
 </html>
