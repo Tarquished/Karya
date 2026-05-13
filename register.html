@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Karya - Daftar</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script>
+tailwind.config={theme:{extend:{fontFamily:{sans:['Plus Jakarta Sans','sans-serif']},colors:{cream:'#f8f7f3',paleyellow:'#ffffdb',lavender:'#94a4f6',royal:'#5a74f6',dark:'#1a1a2e'},boxShadow:{'card':'0 12px 32px -12px rgba(90,116,246,0.1)','card-hover':'0 20px 40px -10px rgba(90,116,246,0.2)','glow':'0 0 20px rgba(90,116,246,0.4)'}}}}
+</script>
+<style>
+/* --- FORCED FIGMA DIMENSIONS --- */
+html, body {
+    width: 1312px !important;
+    min-height: 2550px !important;
+    margin: 0 auto;
+    background: #f8f7f3;
+    overflow-x: hidden;
+}
+/* ------------------------------- */
+
+.bg-mesh{background-image:radial-gradient(at 80% 0%,hsla(230,89%,84%,.4) 0,transparent 50%),radial-gradient(at 0% 50%,hsla(60,100%,86%,.4) 0,transparent 50%)}
+</style>
+</head>
+<body class="text-gray-800 antialiased bg-mesh">
+
+<div class="w-full pt-32 pb-16 flex justify-center">
+    <div class="w-full max-w-[480px] px-6">
+        
+        <div class="text-center mb-10">
+            <div class="text-4xl font-extrabold text-royal tracking-tighter mb-2">Karya.id</div>
+            <p class="text-gray-500 text-sm">Platform Freelance Marketplace Indonesia</p>
+        </div>
+
+        <div class="bg-white rounded-[32px] border border-gray-100 shadow-card p-10">
+            
+            <div class="flex bg-gray-100 rounded-2xl p-1 mb-8">
+                <button class="text-gray-500 flex-1 py-3 rounded-xl text-sm font-extrabold transition-all">Masuk</button>
+                <button class="bg-royal text-white shadow-md flex-1 py-3 rounded-xl text-sm font-extrabold transition-all">Daftar</button>
+            </div>
+
+            <div class="space-y-5">
+                <div class="grid grid-cols-2 gap-4">
+                    <div>
+                        <label class="text-sm font-bold text-gray-600 block mb-2">Nama Depan</label>
+                        <input type="text" placeholder="Budi" class="w-full bg-gray-50 border border-gray-200 rounded-2xl py-3.5 px-4 text-sm font-medium focus:outline-none focus:border-royal focus:ring-4 focus:ring-royal/10 transition-all">
+                    </div>
+                    <div>
+                        <label class="text-sm font-bold text-gray-600 block mb-2">Nama Belakang</label>
+                        <input type="text" placeholder="Antoni" class="w-full bg-gray-50 border border-gray-200 rounded-2xl py-3.5 px-4 text-sm font-medium focus:outline-none focus:border-royal focus:ring-4 focus:ring-royal/10 transition-all">
+                    </div>
+                </div>
+                <div>
+                    <label class="text-sm font-bold text-gray-600 block mb-2">Email</label>
+                    <div class="relative">
+                        <svg class="w-5 h-5 text-gray-400 absolute left-4 top-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                        <input type="email" placeholder="nama@email.com" class="w-full bg-gray-50 border border-gray-200 rounded-2xl py-3.5 pl-12 pr-4 text-sm font-medium focus:outline-none focus:border-royal focus:ring-4 focus:ring-royal/10 transition-all">
+                    </div>
+                </div>
+                <div>
+                    <label class="text-sm font-bold text-gray-600 block mb-2">Password</label>
+                    <div class="relative">
+                        <svg class="w-5 h-5 text-gray-400 absolute left-4 top-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
+                        <input type="password" placeholder="Min. 8 karakter" class="w-full bg-gray-50 border border-gray-200 rounded-2xl py-3.5 pl-12 pr-4 text-sm font-medium focus:outline-none focus:border-royal focus:ring-4 focus:ring-royal/10 transition-all">
+                    </div>
+                </div>
+                <div>
+                    <label class="text-sm font-bold text-gray-600 block mb-2">Saya ingin</label>
+                    <div class="grid grid-cols-2 gap-3">
+                        <label class="flex items-center gap-3 p-4 bg-gray-50 border-2 border-royal rounded-2xl cursor-pointer">
+                            <input type="radio" name="role" checked class="w-4 h-4 text-royal focus:ring-royal">
+                            <div><p class="text-sm font-bold text-dark">Menjadi Klien</p><p class="text-xs text-gray-400">Cari freelancer</p></div>
+                        </label>
+                        <label class="flex items-center gap-3 p-4 bg-gray-50 border-2 border-gray-200 rounded-2xl cursor-pointer hover:border-lavender transition-all">
+                            <input type="radio" name="role" class="w-4 h-4 text-royal focus:ring-royal">
+                            <div><p class="text-sm font-bold text-dark">Jadi Freelancer</p><p class="text-xs text-gray-400">Jual jasamu</p></div>
+                        </label>
+                    </div>
+                </div>
+                <div class="flex items-start gap-2">
+                    <input type="checkbox" class="w-4 h-4 rounded border-gray-300 text-royal focus:ring-royal mt-0.5">
+                    <span class="text-xs text-gray-500">Saya setuju dengan <a href="#" class="text-royal font-semibold">Syarat & Ketentuan</a> dan <a href="#" class="text-royal font-semibold">Kebijakan Privasi</a> Karya.</span>
+                </div>
+                <button class="w-full py-4 bg-royal text-white rounded-2xl font-extrabold shadow-lg shadow-royal/30 hover:-translate-y-0.5 hover:shadow-glow transition-all">Buat Akun</button>
+            </div>
+            
+        </div>
+
+        <p class="text-center text-sm text-gray-400 mt-6">Sudah punya akun? <a href="#" class="text-royal font-semibold hover:underline">Masuk</a></p>
+    </div>
+</div>
+
+</body>
+</html>
